@@ -3,6 +3,11 @@ const express = require("express");
 const cors = require("cors");
 const mongoose = require("mongoose");
 
+const postRouter = require("./routes/post");
+const postBannerRouter = require("./routes/postBanner");
+const postAds = require("./routes/postAds");
+const postGallery = require("./routes/postGallery");
+
 const app = express();
 const connectDB = async () => {
   try {
@@ -22,6 +27,10 @@ const connectDB = async () => {
 
 app.use(express.json());
 app.use(cors());
+app.use("/api/posts", postRouter);
+app.use("/api/posts", postBannerRouter);
+app.use("/api/posts", postAds);
+app.use("/api/posts", postGallery);
 
 app.get("/", (req, res) => {
   res.send("Hello to Memories API");
