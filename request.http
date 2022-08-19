@@ -1,0 +1,118 @@
+POST http://localhost:5000/api/posts
+Content-Type: application/json
+
+{
+    "category": "Trẻ em",
+    "name":"Áo bé trai",
+    "slugItem":"ao-be-trai",
+    "categoryItem": "Bé trai",
+    "catMenu":"Hàng mới về trẻ em",
+    "slugCatMenu":"hang-moi-ve-tre-em",
+    "title":"Bộ Đồ Thun Bé Trai",
+    "price": 455000,
+    "color": ["Trắng"],
+    "size": ["s", "m", "l"],
+    "slugDetail":"bo-do-thun-be-trai",
+    "listImg": [
+      "https://pubcdn.ivymoda.com/files/product/thumab/1400/2022/06/29/f4b5eae92d9476779de11bcc966acfd7.JPG",
+      "https://pubcdn.ivymoda.com/files/product/thumab/1400/2022/06/29/f710d4569ec1e506926bb542fa139fa3.JPG",
+      "https://pubcdn.ivymoda.com/files/product/thumab/1400/2022/06/29/2fef3020c1ba9f859455773d9de21555.JPG",
+      "https://pubcdn.ivymoda.com/files/product/thumab/1400/2022/06/29/b944c6f287428c0a30c6bf9fafe10075.JPG",
+      "https://pubcdn.ivymoda.com/files/product/thumab/1400/2022/06/29/7a7844891fc26e5b088f8c92a0141341.JPG"
+    ],
+    "desc": [
+      "Áo thun bé trai ngắn tay, cổ tròn và có 3 khuy cài. Phía trước áo là túi hộp phối chữ.",
+      "Quần cạp chun, dáng lửng, có 2 túi chéo phí trước và 1 phía sau."
+    ],
+    "detail": [
+      {
+        "title": "Dòng sản phẩm",
+        "info": "Boy"
+      },
+      {
+        "title": "Nhóm sản phẩm",
+        "info": "Áo"
+      },
+      {
+        "title": "Cổ áo",
+        "info": "Cổ tròn"
+      }
+    ],
+    "preserve": [
+      "Chi tiết bảo quản sản phẩm : ",
+      "* Vải dệt kim : sau khi giặt sản phẩm phải được phơi ngang tránh bai dãn.",
+      "* Vải voan , lụa , chiffon nên giặt bằng tay.",
+      " Vải thô , tuytsy , kaki không có phối hay trang trí đá cườm thì có thể giặt máy.",
+      "* Vải thô , tuytsy, kaki có phối màu tường phản hay trang trí voan , lụa , đá cườm thì cần giặt tay.",
+      "* Đồ Jeans nên hạn chế giặt bằng máy giặt vì sẽ làm phai màu jeans.Nếu giặt thì nên lộn trái sản phẩm khi giặt , đóng khuy , kéo khóa, không nên giặt chung cùng đồ sáng màu , tránh dính màu vào các sản phẩm khác. ",
+      "* Các sản phẩm cần được giặt ngay không ngâm tránh bị loang màu , phân biệt màu và loại vải để tránh trường hợp vải phai. Không nên giặt sản phẩm với xà phòng có chất tẩy mạnh , nên giặt cùng xà phòng pha loãng.",
+      "* Các sản phẩm có thể giặt bằng máy thì chỉ nên để chế độ giặt nhẹ , vắt mức trung bình và nên phân các loại sản phẩm cùng màu và cùng loại vải khi giặt.",
+      "* Nên phơi sản phẩm tại chỗ thoáng mát , tránh ánh nắng trực tiếp sẽ dễ bị phai bạc màu , nên làm khô quần áo bằng cách phơi ở những điểm gió sẽ giữ màu vải tốt hơn.",
+      "* Những chất vải 100% cotton , không nên phơi sản phẩm bằng mắc áo mà nên vắt ngang sản phẩm lên dây phơi để tránh tình trạng rạn vải.",
+      "* Khi ủi sản phẩm bằng bàn là và sử dụng chế độ hơi nước sẽ làm cho sản phẩm dễ ủi phẳng , mát và không bị cháy , giữ màu sản phẩm được đẹp và bền lâu hơn. Nhiệt độ của bàn là tùy theo từng loại vải. "
+    ]
+} 
+###
+GET http://localhost:5000/api/posts
+
+
+###
+POST http://localhost:5000/api/posts/bannerMobile
+Content-Type: application/json
+
+{
+    "img":"https://pubcdn.ivymoda.com/files/news/2022/07/14/5aa024deae6c31306e141af393afd54b.jpg",
+    "slug":"sale-20"
+}
+
+
+###
+POST http://localhost:5000/api/posts/ads
+Content-Type: application/json
+
+{
+    "img":"https://pubcdn.ivymoda.com/files/news/2022/04/29/095c1bfc9c8fd41cb70e3b7a610d622a.jpg",
+    "slug":"/danh-muc/hang-moi-ve-tre-em"
+}
+
+###
+POST http://localhost:5000/api/posts/gallery
+Content-Type: application/json
+
+{
+    "img":"https://pubcdn.ivymoda.com/files/news/2022/04/06/da308f7ca8f1e1875532e3b5542c1294.jpg",
+    "slug":"https://www.youtube.com/"
+}
+
+
+###
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+  "username":"jim",
+  "password":"jim"
+}
+
+###
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+  "username":"jim",
+  "password":"jim1"
+}
+
+
+###
+POST http://localhost:5000/api/posts/cart
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmZjODZlM2NiNWUwNmQxYjk1MGJjMWEiLCJpYXQiOjE2NjA3OTYyNzN9.t-zUwO55yaaEmGv60YgHeBIHzouxeCdgFVZHQjqxrK4
+
+{
+  "cart":["a","b"]
+}
+
+###
+GET http://localhost:5000/api/posts/cart
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmZjODZlM2NiNWUwNmQxYjk1MGJjMWEiLCJpYXQiOjE2NjA4MTM2NzF9.xSxmIIfpyc_-JqjBIiu94Hc4FRDHzTB-h_cK_mOQGaw

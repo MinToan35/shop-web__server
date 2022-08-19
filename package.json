@@ -1,29 +1,27 @@
 {
-  "name": "shop-web__server",
+  "name": "server",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "start":"node index",
-    "server": "nodemon index",
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "engines": {
+    "node": ">=0.10.22",
+    "npm": ">=1.3.14"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/MinToan35/shop-web__server.git"
+  "stack": "heroku-22",
+  "scripts": {
+    "start": "node index.js",
+    "server": "nodemon index"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/MinToan35/shop-web__server/issues"
-  },
-  "homepage": "https://github.com/MinToan35/shop-web__server#readme",
   "dependencies": {
+    "argon2": "^0.28.7",
     "cors": "^2.8.5",
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
-    "mongoose": "^6.5.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.5.1",
     "nodemon": "^2.0.19"
   }
 }
