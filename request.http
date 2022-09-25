@@ -115,4 +115,4 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmZjO
 
 ###
 GET http://localhost:5000/api/posts/cart
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmZjODZlM2NiNWUwNmQxYjk1MGJjMWEiLCJpYXQiOjE2NjA4MTM2NzF9.xSxmIIfpyc_-JqjBIiu94Hc4FRDHzTB-h_cK_mOQGaw
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmZjODZlM2NiNWUwNmQxYjk1MGJjMWEiLCJpYXQiOjE2NjA4MTM2NzF9.xSxmIIfpyc_-JqjBIiu94Hc4FRDHzTB-h_cK_mOQGa
